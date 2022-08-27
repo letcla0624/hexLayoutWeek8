@@ -1,0 +1,354 @@
+---
+title: 藝術家介紹頁
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<main>
+  <section>
+    <div class="container mt-4d5">
+      <div class="row g-3 g-lg-4">
+        <div class="col-lg-9">
+          <div class="d-lg-flex">
+            <img src="./assets/images/artist01.jpg" alt="" class="artist__img">
+            <div class="bg-white border border-black p-4 flex-grow-1">
+              <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h1 mb-0">Michael</h1>
+                <div class="d-flex">
+                  <ul class="list-unstyled d-flex align-items-center mb-0">
+                    <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                    <li class="ms-2"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="ms-2"><a href="#"><i class="fas fa-globe"></i></a></li>
+                    <li class="ms-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mt-3 mb-4">0x3ya666…88ef</p>
+              <p class="text-Noto">
+                Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <ul class="list-group">
+            <li class="list-group-item px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <b>販售中</b>
+                <p class="fs-2 lh-34px">168</p>
+              </div>
+            </li>
+            <li class="list-group-item px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <b>地板價格</b>
+                <p class="fs-2 lh-34px">0.6 <span class="fs-4">ETH</span></p>
+              </div>
+            </li>
+            <li class="list-group-item px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <b>7 日成交</b>
+                <p class="fs-2 lh-34px">8.8 <span class="fs-4">ETH</span></p>
+              </div>
+            </li>
+            <li class="list-group-item px-4 py-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <b>30 日成交</b>
+                <p class="fs-2 lh-34px">23.1 <span class="fs-4">ETH</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-4d5 mt-lg-8">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-2 fs-lg-1 px-lg-5 py-3 active" id="art-tab" data-bs-toggle="tab"
+            data-bs-target="#art-tab-pane" type="button" role="tab" aria-controls="art-tab-pane"
+            aria-selected="true">Art Works <span class="fs-5 fw-bold d-none d-lg-inline">系列作品</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-2 fs-lg-1 px-lg-5 py-3" id="collection-tab" data-bs-toggle="tab"
+            data-bs-target="#collection-tab-pane" type="button" role="tab" aria-controls="collection-tab-pane"
+            aria-selected="false">Collection <span class="fs-5 fw-bold d-none d-lg-inline">收藏品</span></button>
+        </li>
+      </ul>
+      <div class="tab-content pt-4 pb-4d5 pt-lg-4d5 pb-lg-8" id="myTabContent">
+        <div class="tab-pane fade show active" id="art-tab-pane" role="tabpanel" aria-labelledby="art-tab" tabindex="0">
+          <div class="bg-white border pt-4d2 pt-lg-5 pb-img-width position-relative">
+            <div class="row justify-content-center px-3">
+              <div class="col-lg-10">
+                <h3 class=" fs-4 fw-bold mb-3">追求者送我的花</h3>
+                <div class="d-lg-flex justify-content-between align-items-end mb-4">
+                  <p class="max-w-856px mb-3 mb-lg-0 me-lg-3">
+                    我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+                  <ul class="list-unstyled row row-cols-1 row-cols-lg-4 g-2 mb-0 art-works-img">
+                    <li class="col">
+                      <div class="img-cover">
+                        <img src="./assets/images/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg" alt="art12">
+                      </div>
+                    </li>
+                    <li class="col d-none d-lg-block">
+                      <div class="img-cover">
+                        <img src="./assets/images/art30.jpg" alt="art30">
+                      </div>
+                    </li>
+                    <li class="col d-none d-lg-block">
+                      <div class="img-cover">
+                        <img src="./assets/images/art14.jpg" alt="art14">
+                      </div>
+                    </li>
+                    <li class="col d-none d-lg-block">
+                      <div class="img-cover">
+                        <img src="./assets/images/art29.jpg" alt="art29">
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="text-center mt-3 mb-4d2 my-lg-0">
+                    <a href="art-works.html" class="btn btn-more btn-more-outline">MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white border pt-4d2 pt-lg-5 pb-img-width position-relative">
+            <div class="row justify-content-center px-3">
+              <div class="col-lg-10">
+                <h3 class=" fs-4 fw-bold mb-3">我家窗前的鳥</h3>
+                <div class="d-lg-flex justify-content-between align-items-end mb-4">
+                  <p class="max-w-856px mb-3 mb-lg-0 me-lg-3">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
+                  </p>
+                  <ul class="list-unstyled row row-cols-1 row-cols-lg-4 g-2 mb-0 art-works-img">
+                    <li class="col">
+                      <div class="img-cover">
+                        <img src="./assets/images/art27.jpg" alt="art27">
+                      </div>
+                    </li>
+                    <li class="col d-none d-lg-block">
+                      <div class="img-cover">
+                        <img src="./assets/images/art21.jpg" alt="art21">
+                      </div>
+                    </li>
+                    <li class="col d-none d-lg-block">
+                      <div class="img-cover">
+                        <img src="./assets/images/art26.jpg" alt="art26">
+                      </div>
+                    </li>
+                    <li class="col d-none d-lg-block">
+                      <div class="img-cover">
+                        <img src="./assets/images/art22.jpg" alt="art22">
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="text-center mt-3 mb-4d2 my-lg-0">
+                    <a href="art-works.html" class="btn btn-more btn-more-outline">MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="collection-tab-pane" role="tabpanel" aria-labelledby="collection-tab"
+          tabindex="0">
+          <ul class="list-unstyled row row-cols-2 row-cols-lg-3 row-cols-xl-4 gx-4 gy-3 gy-lg-5 mb-0 grid-masonry"
+            data-masonry='{"percentPosition": true }'>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art09.jpg" alt="區塊戀-他的私生活">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">區塊戀-他的私生活</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">區塊戀-他的私生活</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art10.jpg" alt="夏娃的醜聞">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">夏娃的醜聞</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art02.jpg" alt="藍色啤酒海">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">藍色啤酒海</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art11.jpg" alt="沒有人愛我">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">沒有人愛我</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">沒有人愛我</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">不哭不哭眼淚是珍珠</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">不哭不哭眼淚是珍珠</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art03.jpg" alt="十分鐘就到">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">十分鐘就到</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">十分鐘就到</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art04.jpg" alt="我這樣有美嗎">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我這樣有美嗎</p>
+              </div>
+            </li>
+            <li class="col grid-masonry-item">
+              <div class="border-lg-bottom border-black artwork">
+                <div class="bg-white p-2 p-lg-4 position-relative">
+                  <a href="#">
+                    <img src="./assets/images/art27.jpg" alt="我真的受傷了">
+                    <div class="artwork__overlay p-3">
+                      <div class=" border border-white p-3 h-100 d-flex flex-column justify-content-between">
+                        <div class="text-white">
+                          <p class="mb-3">唯一想擁有的人，唯一不可以擁有的</p>
+                          <p>
+                            <i class="fab fa-ethereum"></i>
+                            <span>300</span>
+                          </p>
+                        </div>
+                        <div class="text-end">
+                          <a href="art-intro.html" class="btn btn-more btn-more-outline">MORE</a>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,28 @@
+@mixin triangle {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0 0 16px 16px;
+  border-color: $primary transparent;
+  border-style: solid;
+  bottom: 0;
+  right: 0;
+}
+@mixin btn-more-hover {
+  background-color: $primary;
+  color: $white;
+  border: 1px solid $black;
+  &:after {
+    border-color: $black transparent;
+  }
+}
+@mixin text-Noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+@mixin text-Squada {
+  font-family: "Squada One", cursive;
+}
+@mixin text-Paytone {
+  font-family: "Paytone One", sans-serif;
+}

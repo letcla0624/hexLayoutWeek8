@@ -1,0 +1,27 @@
+.white-cube {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 60%;
+    background-color: $white;
+    right: -10px;
+    top: 20%;
+    z-index: 2;
+  }
+}
+.art__works__select {
+  &.offcanvas {
+    width: inherit;
+  }
+  @include media-breakpoint-up(lg) {
+    &.offcanvas {
+      position: relative;
+      width: 100%;
+      visibility: visible;
+      transform: translateX(0);
+      z-index: 1;
+    }
+  }
+}

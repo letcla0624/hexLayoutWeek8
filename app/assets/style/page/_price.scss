@@ -1,0 +1,41 @@
+.price-according {
+  position: relative;
+  cursor: pointer;
+  &:after {
+    @include triangle;
+    border-width: 0 0 32px 32px;
+    border-color: $black transparent;
+  }
+  &:before {
+    position: absolute;
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: $white;
+    bottom: 0;
+    font-size: 12px;
+    right: 6px;
+    z-index: 1;
+  }
+  &:hover {
+    background-color: $light;
+    @include media-breakpoint-up(lg) {
+      background-color: transparent;
+    }
+  }
+  &.open {
+    &:after {
+      border-color: $primary transparent;
+    }
+    &:before {
+      content: "\f068";
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    cursor: default;
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+}
