@@ -22082,7 +22082,11 @@ input:focus {
 }
 
 .mySwiper .swiper-slide-next .position-relative {
+  text-align: right;
   text-align: -webkit-right;
+  text-align: -moz-right;
+  text-align: -ms-right;
+  text-align: -o-right;
 }
 
 .mySwiper .swiper-slide-active {
