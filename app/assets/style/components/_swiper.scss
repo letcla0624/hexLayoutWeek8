@@ -4,9 +4,6 @@
   display: flex;
   justify-content: center;
   padding-bottom: 48px;
-  // @include media-breakpoint-up(lg) {
-  //   padding-bottom: 48px;
-  // }
 }
 
 .mySwiper .swiper-slide {
@@ -47,7 +44,11 @@
   &-next {
     justify-content: flex-end;
     .position-relative {
+      text-align: right;
       text-align: -webkit-right;
+      text-align: -moz-right;
+      text-align: -ms-right;
+      text-align: -o-right;
     }
   }
   &-active {
