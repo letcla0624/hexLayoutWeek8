@@ -24,10 +24,12 @@ function reportWindowSize() {
 }
 
 // 冒泡事件
-const linkBtn = document.querySelector(".linkBtn");
-if (linkBtn) {
-  linkBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
+const linkBtns = document.querySelectorAll(".linkBtn");
+if (linkBtns) {
+  linkBtns.forEach(function (e) {
+    e.addEventListener("click", (item) => {
+      item.stopPropagation();
+    });
   });
 }
 
