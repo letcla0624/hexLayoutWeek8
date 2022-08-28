@@ -73,7 +73,7 @@ var otherSwiper = new Swiper(".otherSwiper", _objectSpread(_objectSpread({}, com
     }
   }
 }));
-var gridMasonry = document.querySelector("grid-masonry");
+var gridMasonry = document.querySelector(".grid-masonry");
 
 if (gridMasonry) {
   window.addEventListener("load", function () {
@@ -90,8 +90,11 @@ dataTabs.forEach(function (dataTab) {
 });
 
 function masonry() {
-  var msnry = new Masonry(".grid-masonry", {
+  var msnry = new Masonry(gridMasonry, {
     itemSelector: ".grid-masonry-item"
+  });
+  imagesLoaded(gridMasonry).on("progress", function () {
+    msnry.layout();
   });
 } // 手機版市值
 
