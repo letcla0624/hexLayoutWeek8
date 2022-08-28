@@ -28,6 +28,15 @@ function reportWindowSize() {
   menuIcon.classList.remove("fa-times");
   menuIcon.classList.add("fa-bars");
   navbarCollapse.classList.remove("show");
+} // 冒泡事件
+
+
+var linkBtn = document.querySelector(".linkBtn");
+
+if (linkBtn) {
+  linkBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
 } // swiper
 
 
@@ -63,16 +72,27 @@ var otherSwiper = new Swiper(".otherSwiper", _objectSpread(_objectSpread({}, com
       slidesPerView: 4
     }
   }
-})); // 解決瀑布流 tab 切換取不到高度
+}));
+var gridMasonry = document.querySelector("grid-masonry");
+
+if (gridMasonry) {
+  masonry();
+} // 解決瀑布流 tab 切換取不到高度
+
 
 var dataTabs = document.querySelectorAll("button[data-bs-toggle=tab]");
 dataTabs.forEach(function (dataTab) {
   dataTab.addEventListener("shown.bs.tab", function () {
-    var msnry = new Masonry(".grid-masonry", {
-      itemSelector: ".grid-masonry-item"
-    });
+    masonry();
   });
-}); // 手機版市值
+});
+
+function masonry() {
+  var msnry = new Masonry(".grid-masonry", {
+    itemSelector: ".grid-masonry-item"
+  });
+} // 手機版市值
+
 
 var priceAccording = document.querySelectorAll(".price-according");
 priceAccording.forEach(function (e) {
