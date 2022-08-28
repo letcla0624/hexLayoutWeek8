@@ -89,8 +89,18 @@ if (gridMasonry) {
 // 解決瀑布流 tab 切換取不到高度
 const dataTabs = document.querySelectorAll("button[data-bs-toggle=tab]");
 dataTabs.forEach(function (dataTab) {
-  dataTab.addEventListener("shown.bs.tab", function () {
+  dataTab.addEventListener("shown.bs.tab", () => {
     masonry();
+  });
+});
+
+// 解決 according 開合取不到高度
+const accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
+accordionButtons.forEach(function (e) {
+  ["hidden.bs.collapse", "shown.bs.collapse"].forEach(function (item) {
+    e.addEventListener(item, () => {
+      masonry();
+    });
   });
 });
 
