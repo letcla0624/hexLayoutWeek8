@@ -31,11 +31,13 @@ function reportWindowSize() {
 } // 冒泡事件
 
 
-var linkBtn = document.querySelector(".linkBtn");
+var linkBtns = document.querySelectorAll(".linkBtn");
 
-if (linkBtn) {
-  linkBtn.addEventListener("click", function (e) {
-    e.stopPropagation();
+if (linkBtns) {
+  linkBtns.forEach(function (e) {
+    e.addEventListener("click", function (item) {
+      item.stopPropagation();
+    });
   });
 } // swiper
 
