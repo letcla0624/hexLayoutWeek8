@@ -1,12 +1,3 @@
-.text-Noto {
-  @include text-Noto;
-}
-.text-Squada {
-  @include text-Squada;
-}
-.text-Paytone {
-  @include text-Paytone;
-}
 .navbar {
   &-brand {
     img {
@@ -30,7 +21,7 @@
     color: $primary;
   }
 }
-.bdr {
+nav .bdr {
   position: fixed;
   height: 56px;
   background-color: $light;
@@ -42,51 +33,6 @@
     top: 100%;
   }
 }
-.btn-more {
-  position: relative;
-  color: $black;
-  font-size: 18px;
-  padding: 4px 48px;
-  width: fit-content;
-  border: none;
-  @include text-Squada;
-  &:after {
-    @include triangle;
-  }
-  &:hover {
-    @include btn-more-hover;
-  }
-  &-outline {
-    border: 1px solid $black;
-    background-color: $white;
-  }
-  &-hover {
-    @include btn-more-hover;
-  }
-}
 .nav-tabs .nav-link {
   color: $secondary;
-}
-.modal {
-  &-dialog {
-    margin: 0 auto;
-  }
-  &-content {
-    height: 100vh;
-    @include media-breakpoint-up(sm) {
-      height: auto;
-    }
-  }
-  input[type="radio"]:checked + label {
-    position: relative;
-    border: 2px solid $primary !important;
-    &:after {
-      position: absolute;
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      color: $primary;
-      right: 16px;
-    }
-  }
 }

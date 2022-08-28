@@ -6,10 +6,12 @@
 @import "../../../node_modules/bootstrap/scss/utilities/api";
 @import "./helpers/response";
 
+@import "./layout/setting";
 @import "./layout/base";
 @import "./layout/layout";
 
 @import "./components/swiper";
+@import "./components/artwork-overlay";
 
 @import "./page/index";
 @import "./page/artist-intro";

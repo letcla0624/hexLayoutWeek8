@@ -4,7 +4,6 @@
   height: 95px;
   overflow: hidden;
 }
-
 .ranking {
   &__num {
     @include media-breakpoint-up(lg) {
@@ -72,32 +71,4 @@
     opacity: 0;
     transition: all 0.3s;
   }
-}
-.artwork {
-  @include media-breakpoint-up(lg) {
-    &:hover {
-      .artwork__overlay {
-        display: block;
-      }
-    }
-  }
-  &__overlay {
-    position: absolute;
-    width: calc(100% - (8px * 2));
-    height: calc(100% - (8px * 2));
-    left: 0;
-    top: 0;
-    transform: translate(8px, 8px);
-    background-color: rgba($color: $black, $alpha: 0.7);
-    display: none;
-    @include media-breakpoint-up(lg) {
-      width: calc(100% - (24px * 2));
-      height: calc(100% - (24px * 2));
-      transform: translate(24px, 24px);
-    }
-  }
-}
-.swiper-slide-bg-1 {
-  background: url(../images/artist01.jpg) center center no-repeat;
-  background-size: cover;
 }
