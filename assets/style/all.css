@@ -21839,43 +21839,6 @@ fieldset:disabled .btn {
   }
 }
 
-html,
-body {
-  font-family: "Squada One", "Noto Sans TC", cursive, sans-serif;
-}
-
-a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-  color: #000;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main {
-  min-height: calc(100vh - 85px - 56px);
-}
-
-@media (min-width: 992px) {
-  main {
-    min-height: calc(100vh - 85px - 108px);
-  }
-}
-
-input:focus {
-  outline: none;
-}
-
 .text-Noto {
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -21886,44 +21849,6 @@ input:focus {
 
 .text-Paytone {
   font-family: "Paytone One", sans-serif;
-}
-
-.navbar-brand img {
-  max-width: 50%;
-}
-
-@media (min-width: 992px) {
-  .navbar-brand img {
-    max-width: 100%;
-  }
-}
-
-.navbar__search i:before {
-  display: inline-block;
-}
-
-.nav-link {
-  color: #000;
-}
-
-.nav-link:hover {
-  color: #e6553b;
-}
-
-.bdr {
-  position: fixed;
-  height: 56px;
-  background-color: #f0f0f0;
-  top: 0;
-  z-index: 0;
-}
-
-@media (min-width: 992px) {
-  .bdr {
-    position: absolute;
-    height: 0;
-    top: 100%;
-  }
 }
 
 .btn-more {
@@ -21975,10 +21900,6 @@ input:focus {
   border-color: #000 transparent;
 }
 
-.nav-tabs .nav-link {
-  color: #808080;
-}
-
 .modal-dialog {
   margin: 0 auto;
 }
@@ -22005,6 +21926,85 @@ input:focus {
   font-weight: 900;
   color: #e6553b;
   right: 16px;
+}
+
+html,
+body {
+  font-family: "Squada One", "Noto Sans TC", cursive, sans-serif;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  min-height: calc(100vh - 85px - 56px);
+}
+
+@media (min-width: 992px) {
+  main {
+    min-height: calc(100vh - 85px - 108px);
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.navbar-brand img {
+  max-width: 50%;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand img {
+    max-width: 100%;
+  }
+}
+
+.navbar__search i:before {
+  display: inline-block;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #e6553b;
+}
+
+nav .bdr {
+  position: fixed;
+  height: 56px;
+  background-color: #f0f0f0;
+  top: 0;
+  z-index: 0;
+}
+
+@media (min-width: 992px) {
+  nav .bdr {
+    position: absolute;
+    height: 0;
+    top: 100%;
+  }
+}
+
+.nav-tabs .nav-link {
+  color: #808080;
 }
 
 .swiper-slide {
@@ -22184,6 +22184,35 @@ input:focus {
   }
 }
 
+@media (min-width: 992px) {
+  .artwork:hover .artwork__overlay {
+    display: block;
+  }
+}
+
+.artwork__overlay {
+  position: absolute;
+  width: calc(100% - (8px * 2));
+  height: calc(100% - (8px * 2));
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(8px, 8px);
+      -ms-transform: translate(8px, 8px);
+          transform: translate(8px, 8px);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .artwork__overlay {
+    width: calc(100% - (24px * 2));
+    height: calc(100% - (24px * 2));
+    -webkit-transform: translate(24px, 24px);
+        -ms-transform: translate(24px, 24px);
+            transform: translate(24px, 24px);
+  }
+}
+
 .img-cover {
   position: relative;
   width: 87px;
@@ -22287,40 +22316,6 @@ input:focus {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-@media (min-width: 992px) {
-  .artwork:hover .artwork__overlay {
-    display: block;
-  }
-}
-
-.artwork__overlay {
-  position: absolute;
-  width: calc(100% - (8px * 2));
-  height: calc(100% - (8px * 2));
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(8px, 8px);
-      -ms-transform: translate(8px, 8px);
-          transform: translate(8px, 8px);
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .artwork__overlay {
-    width: calc(100% - (24px * 2));
-    height: calc(100% - (24px * 2));
-    -webkit-transform: translate(24px, 24px);
-        -ms-transform: translate(24px, 24px);
-            transform: translate(24px, 24px);
-  }
-}
-
-.swiper-slide-bg-1 {
-  background: url(../images/artist01.jpg) center center no-repeat;
-  background-size: cover;
 }
 
 @media (min-width: 992px) {
