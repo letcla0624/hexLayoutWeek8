@@ -75,6 +75,15 @@ var otherSwiper = new Swiper(".otherSwiper", _objectSpread(_objectSpread({}, com
 }));
 var gridMasonry = document.querySelector(".grid-masonry");
 
+function masonry() {
+  var msnry = new Masonry(gridMasonry, {
+    itemSelector: ".grid-masonry-item"
+  });
+  imagesLoaded(gridMasonry).on("progress", function () {
+    msnry.layout();
+  });
+}
+
 if (gridMasonry) {
   window.addEventListener("load", function () {
     masonry();
@@ -87,17 +96,7 @@ dataTabs.forEach(function (dataTab) {
   dataTab.addEventListener("shown.bs.tab", function () {
     masonry();
   });
-});
-
-function masonry() {
-  var msnry = new Masonry(gridMasonry, {
-    itemSelector: ".grid-masonry-item"
-  });
-  imagesLoaded(gridMasonry).on("progress", function () {
-    msnry.layout();
-  });
-} // 手機版市值
-
+}); // 手機版市值
 
 var priceAccording = document.querySelectorAll(".price-according");
 priceAccording.forEach(function (e) {
