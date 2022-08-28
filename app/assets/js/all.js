@@ -23,6 +23,14 @@ function reportWindowSize() {
   navbarCollapse.classList.remove("show");
 }
 
+// 冒泡事件
+const linkBtn = document.querySelector(".linkBtn");
+if (linkBtn) {
+  linkBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+}
+
 // swiper
 const common = {
   spaceBetween: 24,
@@ -62,13 +70,27 @@ const otherSwiper = new Swiper(".otherSwiper", {
   },
 });
 
+const gridMasonry = document.querySelector(".grid-masonry");
+function masonry() {
+  const msnry = new Masonry(gridMasonry, {
+    itemSelector: ".grid-masonry-item",
+  });
+  imagesLoaded(gridMasonry).on("progress", () => {
+    msnry.layout();
+  });
+}
+
+if (gridMasonry) {
+  window.addEventListener("load", () => {
+    masonry();
+  });
+}
+
 // 解決瀑布流 tab 切換取不到高度
 const dataTabs = document.querySelectorAll("button[data-bs-toggle=tab]");
 dataTabs.forEach(function (dataTab) {
   dataTab.addEventListener("shown.bs.tab", function () {
-    let msnry = new Masonry(".grid-masonry", {
-      itemSelector: ".grid-masonry-item",
-    });
+    masonry();
   });
 });
 
