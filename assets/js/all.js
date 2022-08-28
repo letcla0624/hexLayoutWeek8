@@ -76,7 +76,9 @@ var otherSwiper = new Swiper(".otherSwiper", _objectSpread(_objectSpread({}, com
 var gridMasonry = document.querySelector("grid-masonry");
 
 if (gridMasonry) {
-  masonry();
+  window.addEventListener("load", function () {
+    masonry();
+  });
 } // 解決瀑布流 tab 切換取不到高度
 
 
