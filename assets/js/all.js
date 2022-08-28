@@ -96,6 +96,15 @@ dataTabs.forEach(function (dataTab) {
   dataTab.addEventListener("shown.bs.tab", function () {
     masonry();
   });
+}); // 解決 according 開合取不到高度
+
+var accordionButtons = document.querySelectorAll(".grid-masonry .accordion");
+accordionButtons.forEach(function (e) {
+  ["hidden.bs.collapse", "shown.bs.collapse"].forEach(function (item) {
+    e.addEventListener(item, function () {
+      masonry();
+    });
+  });
 }); // 手機版市值
 
 var priceAccording = document.querySelectorAll(".price-according");
