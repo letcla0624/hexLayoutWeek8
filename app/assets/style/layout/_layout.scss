@@ -1,20 +1,3 @@
-.navbar {
-  &-brand {
-    img {
-      max-width: 50%;
-      @include media-breakpoint-up(lg) {
-        max-width: 100%;
-      }
-    }
-  }
-  &__search {
-    i {
-      &:before {
-        display: inline-block;
-      }
-    }
-  }
-}
 .nav-link {
   color: $black;
   &:hover {
@@ -35,4 +18,7 @@ nav .bdr {
 }
 .nav-tabs .nav-link {
   color: $secondary;
+  &:hover {
+    color: $black;
+  }
 }
