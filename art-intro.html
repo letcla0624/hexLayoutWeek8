@@ -24,7 +24,7 @@
           </a>
           <div class="d-flex align-items-center">
             <button
-              class="text-black border-0 shadow-none w-24px h-24px d-flex justify-content-center align-items-center px-0 me-4 d-lg-none navbar__search"
+              class="text-black border-0 shadow-none bg-transparent w-24px h-24px d-flex justify-content-center align-items-center px-0 me-4 d-lg-none navbar__search"
               type="button">
               <i class="fas fa-search fs-5"></i>
             </button>
@@ -38,11 +38,13 @@
         </div>
         <div class="d-lg-flex">
           <form class="border-lg-start border-black px-lg-5 d-none d-lg-flex">
-            <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none"
+            <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none" id="search-btn"
               placeholder="搜尋作品名稱、藝術家名稱" aria-label="搜尋作品名稱、藝術家名稱" aria-describedby="search-btn">
-            <button class="btn border-0" type="submit" id="search-btn">
-              <i class="fas fa-search fs-3"></i>
-            </button>
+            <label class="d-flex" for="search-btn">
+              <button class="btn border-0" type="submit" id="search-btn">
+                <i class="fas fa-search fs-3"></i>
+              </button>
+            </label>
           </form>
           <div class="collapse navbar-collapse mt-3 mb-2 my-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto text-center mb-0">
@@ -363,7 +365,7 @@
                   </div>
                 </a>
               </div>
-              <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">群聚的小鳥們</p>
+              <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">群聚的小鳥們</h3>
             </div>
           </li>
           <li class="swiper-slide flex-column">
@@ -389,7 +391,7 @@
                   </div>
                 </a>
               </div>
-              <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</p>
+              <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</h3>
             </div>
           </li>
           <li class="swiper-slide flex-column">
@@ -415,7 +417,7 @@
                   </div>
                 </a>
               </div>
-              <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">這兩隻也太像企鵝了吧</p>
+              <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">這兩隻也太像企鵝了吧</h3>
             </div>
           </li>
           <li class="swiper-slide flex-column">
@@ -441,7 +443,7 @@
                   </div>
                 </a>
               </div>
-              <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">群聚囉～小鳥</p>
+              <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">群聚囉～小鳥</h3>
             </div>
           </li>
         </ul>

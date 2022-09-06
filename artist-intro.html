@@ -24,7 +24,7 @@
           </a>
           <div class="d-flex align-items-center">
             <button
-              class="text-black border-0 shadow-none w-24px h-24px d-flex justify-content-center align-items-center px-0 me-4 d-lg-none navbar__search"
+              class="text-black border-0 shadow-none bg-transparent w-24px h-24px d-flex justify-content-center align-items-center px-0 me-4 d-lg-none navbar__search"
               type="button">
               <i class="fas fa-search fs-5"></i>
             </button>
@@ -38,11 +38,13 @@
         </div>
         <div class="d-lg-flex">
           <form class="border-lg-start border-black px-lg-5 d-none d-lg-flex">
-            <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none"
+            <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none" id="search-btn"
               placeholder="搜尋作品名稱、藝術家名稱" aria-label="搜尋作品名稱、藝術家名稱" aria-describedby="search-btn">
-            <button class="btn border-0" type="submit" id="search-btn">
-              <i class="fas fa-search fs-3"></i>
-            </button>
+            <label class="d-flex" for="search-btn">
+              <button class="btn border-0" type="submit" id="search-btn">
+                <i class="fas fa-search fs-3"></i>
+              </button>
+            </label>
           </form>
           <div class="collapse navbar-collapse mt-3 mb-2 my-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto text-center mb-0">
@@ -147,23 +149,23 @@
   </section>
   <section>
     <div class="container mt-4d5 mt-lg-8">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
+      <div class="nav nav-tabs" id="myTab" role="tablist">
+        <h2 class="nav-item mb-0" role="presentation">
           <button class="nav-link fs-2 fs-lg-1 px-lg-5 py-3 active" id="art-tab" data-bs-toggle="tab"
             data-bs-target="#art-tab-pane" type="button" role="tab" aria-controls="art-tab-pane"
             aria-selected="true">Art Works <span class="fs-5 fw-bold d-none d-lg-inline">系列作品</span></button>
-        </li>
-        <li class="nav-item" role="presentation">
+        </h2>
+        <h2 class="nav-item mb-0" role="presentation">
           <button class="nav-link fs-2 fs-lg-1 px-lg-5 py-3" id="collection-tab" data-bs-toggle="tab"
             data-bs-target="#collection-tab-pane" type="button" role="tab" aria-controls="collection-tab-pane"
             aria-selected="false">Collection <span class="fs-5 fw-bold d-none d-lg-inline">收藏品</span></button>
-        </li>
-      </ul>
+        </h2>
+      </div>
       <div class="tab-content pt-4 pb-4d5 pt-lg-4d5 pb-lg-8" id="myTabContent">
         <div class="tab-pane fade show active" id="art-tab-pane" role="tabpanel" aria-labelledby="art-tab" tabindex="0">
           <div class="bg-white border pt-4d2 pt-lg-5 pb-img-width position-relative">
             <div class="row justify-content-center px-3">
-              <div class="col-lg-10">
+              <div class="col-lg-10 ps-1">
                 <h3 class=" fs-4 fw-bold mb-3">追求者送我的花</h3>
                 <div class="d-lg-flex justify-content-between align-items-end mb-4">
                   <p class="max-w-856px mb-3 mb-lg-0 me-lg-3">
@@ -199,7 +201,7 @@
           </div>
           <div class="bg-white border pt-4d2 pt-lg-5 pb-img-width position-relative">
             <div class="row justify-content-center px-3">
-              <div class="col-lg-10">
+              <div class="col-lg-10 ps-1">
                 <h3 class=" fs-4 fw-bold mb-3">我家窗前的鳥</h3>
                 <div class="d-lg-flex justify-content-between align-items-end mb-4">
                   <p class="max-w-856px mb-3 mb-lg-0 me-lg-3">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。
@@ -259,7 +261,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">區塊戀-他的私生活</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">區塊戀-他的私生活</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -283,7 +285,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">夏娃的醜聞</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">夏娃的醜聞</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -307,7 +309,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">藍色啤酒海</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">藍色啤酒海</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -331,7 +333,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">沒有人愛我</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">沒有人愛我</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -355,7 +357,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">不哭不哭眼淚是珍珠</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">不哭不哭眼淚是珍珠</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -379,7 +381,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">十分鐘就到</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">十分鐘就到</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -403,7 +405,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我這樣有美嗎</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我這樣有美嗎</h3>
               </div>
             </li>
             <li class="col grid-masonry-item">
@@ -427,7 +429,7 @@
                     </div>
                   </a>
                 </div>
-                <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</p>
+                <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</h3>
               </div>
             </li>
           </ul>

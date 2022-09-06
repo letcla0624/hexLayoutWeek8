@@ -14566,27 +14566,9 @@ fieldset:disabled .btn {
 }
 
 .vtr {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-}
-
-.rotate-n90 {
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-.rotate-90 {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.rotate-origin-40-60 {
-  -webkit-transform-origin: 40% 60%;
-      -ms-transform-origin: 40% 60%;
-          transform-origin: 40% 60%;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
 }
 
 .z-index-1 {
@@ -21950,6 +21932,7 @@ fieldset:disabled .btn {
 html,
 body {
   font-family: "Squada One", "Noto Sans TC", cursive, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -22238,6 +22221,7 @@ nav .bdr {
     height: 64px;
     line-height: 64px;
     text-align: center;
+    z-index: 1;
   }
 }
 

@@ -24,7 +24,7 @@
           </a>
           <div class="d-flex align-items-center">
             <button
-              class="text-black border-0 shadow-none w-24px h-24px d-flex justify-content-center align-items-center px-0 me-4 d-lg-none navbar__search"
+              class="text-black border-0 shadow-none bg-transparent w-24px h-24px d-flex justify-content-center align-items-center px-0 me-4 d-lg-none navbar__search"
               type="button">
               <i class="fas fa-search fs-5"></i>
             </button>
@@ -38,11 +38,13 @@
         </div>
         <div class="d-lg-flex">
           <form class="border-lg-start border-black px-lg-5 d-none d-lg-flex">
-            <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none"
+            <input type="text" class="form-control w-230px bg-transparent border-0 shadow-none" id="search-btn"
               placeholder="搜尋作品名稱、藝術家名稱" aria-label="搜尋作品名稱、藝術家名稱" aria-describedby="search-btn">
-            <button class="btn border-0" type="submit" id="search-btn">
-              <i class="fas fa-search fs-3"></i>
-            </button>
+            <label class="d-flex" for="search-btn">
+              <button class="btn border-0" type="submit" id="search-btn">
+                <i class="fas fa-search fs-3"></i>
+              </button>
+            </label>
           </form>
           <div class="collapse navbar-collapse mt-3 mb-2 my-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto text-center mb-0">
@@ -96,10 +98,7 @@
           <div class="col-lg-8">
             <div class="d-flex">
               <div class="bg-black text-white w-100px d-none d-lg-block">
-                <div class="d-flex align-items-center rotate-90 rotate-origin-40-60">
-                  <h1 class="h1 me-3 mb-0">Recommend</h1>
-                  <span class="fs-5 fw-bold rotate-n90 ms-5">推 薦 系 列</span>
-                </div>
+                <h1 class="vtr mt-4 mx-4">Recommend<span class="fs-5 fw-bold mt-3">推 薦 系 列</span></h1>
               </div>
               <img src="./assets/images/art01.jpg" alt="瞳孔:流動的脈絡">
             </div>
@@ -413,7 +412,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">區塊戀-他的私生活</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">區塊戀-他的私生活</h3>
           </div>
         </li>
         <li class="col grid-masonry-item">
@@ -437,7 +436,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">夏娃的醜聞</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">夏娃的醜聞</h3>
           </div>
         </li>
         <li class="col grid-masonry-item">
@@ -461,7 +460,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">藍色啤酒海</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">藍色啤酒海</h3>
           </div>
         </li>
         <li class="col grid-masonry-item">
@@ -485,7 +484,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">沒有人愛我</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">沒有人愛我</h3>
           </div>
         </li>
         <li class="col grid-masonry-item">
@@ -509,7 +508,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">不哭不哭眼淚是珍珠</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">不哭不哭眼淚是珍珠</h3>
           </div>
         </li>
         <li class="col grid-masonry-item">
@@ -533,7 +532,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">十分鐘就到</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">十分鐘就到</h3>
           </div>
         </li>
         <li class="col d-none d-lg-block grid-masonry-item">
@@ -557,7 +556,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我這樣有美嗎</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我這樣有美嗎</h3>
           </div>
         </li>
         <li class="col d-none d-lg-block grid-masonry-item">
@@ -581,7 +580,7 @@
                 </div>
               </a>
             </div>
-            <p class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</p>
+            <h3 class="fs-7 fs-lg-6 fw-lg-bold p-2 px-lg-0 py-lg-3">我真的受傷了</h3>
           </div>
         </li>
       </ul>
@@ -590,30 +589,29 @@
 
   <section class="pt-4d5 pt-lg-8">
     <div class="text-center">
-      <h2 class="h1 mb-3">Join Us</h2>
-      <h3 class="fs-5 fw-bold mb-4d5">創建並出售你的藝術品</h3>
+      <h2 class="h1 mb-4d5">Join Us <span class="fs-5 fw-bold mt-3 d-block">創建並出售你的藝術品</span></h2>
       <div class="border-bottom border-2 mb-2"></div>
       <div class="border-top mt-2 py-5 py-lg-8">
         <div class="container">
           <ul class="list-unstyled text-Noto row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-5 g-lg-4 mb-0">
             <li>
               <i class="fas fa-wallet fs-1d5 text-primary mb-3"></i>
-              <h4 class="fs-5 fw-bold mb-4">設置你的錢包</h4>
+              <h3 class="fs-5 fw-bold mb-4">設置你的錢包</h3>
               <p>設置好您選擇的錢包後<br>點擊右上角的錢包圖標進行連接</p>
             </li>
             <li>
               <i class="fas fa-pencil-ruler fs-1d5 text-primary mb-3"></i>
-              <h4 class="fs-5 fw-bold mb-4">創建您的主頁</h4>
+              <h3 class="fs-5 fw-bold mb-4">創建您的主頁</h3>
               <p>註冊成為會員，編輯您的資料<br>讓大家了解你</p>
             </li>
             <li>
               <i class="fas fa-icons fs-1d5 text-primary mb-3"></i>
-              <h4 class="fs-5 fw-bold mb-4">添加你的 NFT</h4>
+              <h3 class="fs-5 fw-bold mb-4">添加你的 NFT</h3>
               <p>上傳你的作品<br>添加標題和描述</p>
             </li>
             <li>
               <i class="fas fa-tags fs-1d5 text-primary mb-3"></i>
-              <h4 class="fs-5 fw-bold mb-4">列出它們出售</h4>
+              <h3 class="fs-5 fw-bold mb-4">列出它們出售</h3>
               <p>選擇出售 NFT 的方式<br>並設定價格，等待有緣人</p>
             </li>
           </ul>
