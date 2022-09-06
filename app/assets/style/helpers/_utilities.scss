@@ -85,18 +85,9 @@ $utilities: map-merge(
 );
 
 .vtr {
-  writing-mode: vertical-lr;
-}
-.rotate {
-  &-n90 {
-    transform: rotate(-90deg);
-  }
-  &-90 {
-    transform: rotate(90deg);
-  }
-  &-origin-40-60 {
-    transform-origin: 40% 60%;
-  }
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
 }
 .z-index-1 {
   z-index: 1;

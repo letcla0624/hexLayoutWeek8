@@ -3,12 +3,12 @@
 html,
 body {
   font-family: "Squada One", "Noto Sans TC", cursive, sans-serif;
+  overflow-x: hidden;
 }
 a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  // color: $black;
 }
 img {
   max-width: 100%;
